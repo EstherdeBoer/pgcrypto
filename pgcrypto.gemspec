@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   # Our code is built to work with Rails 4.2. Rails 5.0 will bring breaking changes.
   s.add_dependency 'activerecord',  '~> 4.2'
   s.add_dependency 'activesupport', '~> 4.2'
-  s.add_dependency 'pg',            '>= 0.18'
+  s.add_dependency 'pg',            '>= 0.17.1'
 
   s.require_paths     = %w(lib)
   s.extra_rdoc_files  = %w(LICENSE README.markdown)
@@ -83,4 +83,3 @@ Gem::Specification.new do |s|
   ]
 
 end
-
