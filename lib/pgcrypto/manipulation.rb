@@ -141,6 +141,7 @@ module PGCrypto::Manipulation # Encapsulate the logic that manipulates AREL tree
 
     def translate_child( child )
       return child unless child.respond_to?(:left)
+      return child unless child.left.respond_to?(:relation)
       table_name = child.left.relation.name
       columns    = PGCrypto[ table_name ]
       return child unless columns.present?
